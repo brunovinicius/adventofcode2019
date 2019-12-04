@@ -1,6 +1,7 @@
 import 'package:aoc1/q1.dart';
 import 'package:aoc1/q2.dart';
 import 'package:aoc1/q3.dart';
+import 'package:aoc1/q4.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(AdventOfCode2019App());
@@ -64,6 +65,13 @@ class _MainPageState extends State<MainPage> {
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => Q3Page(title: "Question 3")),
+            ),
+          ),
+          ListTile(
+            title: Text('Question 4'),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Q4Page(title: "Question 4")),
             ),
           ),
         ],
